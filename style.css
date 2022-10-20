@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  flex: 0.2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.navbar-left span{
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}
+
+.navbar-right {
+  font-family: sans-serif;
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar-search {
+  width: 80%;
+  height: 18px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.navbar-search .bi {
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.navbar-search input:focus {
+  outline: none;
+}
+
+
+.container{
+  display: flex;
+}
+.sidebar{
+  background-color: brown;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar h2{
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px;
+  
+}
+
+.sidebar ul li{
+  margin: 25px 0;
+}
+.sidebar ul li a{
+  color: white;
+  padding: 0 30px;
+}
+
+.sidebar ul li a:hover{
+  color: blue;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.main{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.video-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.video-container h3{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.like-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.like-container span{
+  padding: 10px;
+}
+.desc-container{
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.desc-container p{
+  padding: 10px;
+  font-size: 20px;
+}
+.desc-container h5{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+}
+
+.preview-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.preview-container img{
+  width: 100px;
+  height: 50px;
+}
